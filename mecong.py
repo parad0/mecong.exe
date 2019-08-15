@@ -1,0 +1,51 @@
+import os
+import urllib2
+import json
+
+print(" # Welcome to Mecong's IP Tracker :) - v0.1 Initial Release")
+print(" # All Locations are proximities, meaning they might not be the exact location. ")
+print(" # Mecong takes no responsibility for ANY damage that you cause using this program.")
+print(" # Please read our EULA License Agreement before proceeding")
+print(" # Don't forget to add me on Discord! mecong#8151")
+print(" # Enjoy! :)")
+print("---------------------------------")
+print(" ## Press Enter to scan your own IP address. ##")
+while True:
+    ip=raw_input(" IP Address To Track: ")
+    url = "http://ip-api.com/json/"
+    response = urllib2.urlopen(url + ip)
+    data = response.read()
+    values = json.loads(data)
+    
+    print(" STATUS:| " + values['status'])
+    print("---------------------------------")
+    print(" IP Address:| " + values['query'])
+    print("---------------------------------")
+    print(" Internet Service Provider(ISP):| " + values['isp'])
+    print("---------------------------------")
+    print(" Country:| " + values['country'])
+    print("---------------------------------")
+    print(" Region:| " + values['region'])
+    print("---------------------------------")
+    print(" Region (Full Form):| " + values['regionName'])
+    print("---------------------------------")
+    print(" City:| " + values['city'])
+    print("---------------------------------")
+    print(" Country Code:| " + values['countryCode'])
+    print("---------------------------------")
+    print(" Zip Code:| " + values['zip'])
+    print("---------------------------------")
+    print(" TimeZone:| " + values['timezone'])
+    print("---------------------------------")
+    print(" Autonomous System, (AS):| " + values['as'])
+    print("---------------------------------")
+    print(" Organisation Name, (ORG):| " + values['org'])
+    print("---------------------------------")
+    def cls():
+        print('\n' * 2)
+    cls()
+    print("---------------------------------")
+    print(" If you're unable to scan your next IP, please close and reopen mecong.exe ")
+    print("---------------------------------")
+    print(" Made by Mecong :) ");
+    print("---------------------------------")
