@@ -1,6 +1,9 @@
 # Welcome to the mecong.exe repository!
  Please remember to download python 2.7 before running the .exe file.
  	You can download python directly from here: https://www.python.org/ftp/python/2.7.14/
+	<html>
+<h1> To download please allocate to the /mecong folder, then download mecong.exe</h1>
+</html>
 <!DOCTYPE html>
 <html>
 <body>
@@ -21,3 +24,4 @@
 </center>
 </body>
 </html>
+		
